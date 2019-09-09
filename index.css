@@ -1,0 +1,225 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Shadows Into Light', cursive;
+}
+.info{
+  position:relative;
+  margin-left: 10%;
+  margin-right: 10%;
+  top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-bottom:2px solid black;
+  font-size: 25px;
+  color: black;
+  padding: 10px;
+}
+.name{
+  display: flex;
+  font-size: 30px;
+   color:  #dc3558;
+   font-weight: bold;
+   flex: 70%;
+}
+.login{
+  right: 0;
+}
+.login a{
+  border: 1px solid black;
+  border-radius: 15px;
+  text-decoration: none;
+  padding: 5px;
+  color: black;
+}
+.login a:hover{
+  color: #dc3558;
+  border:1px solid #dc3558;
+}
+.name:hover{
+  color: #dc3558;
+  cursor: pointer;
+}
+.menu
+{
+  position: relative;
+  top: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu a{
+  text-decoration: none;
+  color: black;
+  font-size: 23px;
+  border-bottom:  2px solid white;
+  font-weight: bold;
+}
+.menu a:hover{
+    color: #dc3558;
+    border-bottom:  2px solid #dc3558;
+}
+.banner{
+  position: relative;
+  top:40px;
+  flex: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-image:linear-gradient(to right ,#dc3558,#832561);
+  color: white;
+}
+.banner-info{
+  flex: 70%;
+  height: auto;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner-info a{
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  border: 2px solid white;
+  margin-top: 10px;
+  border-radius: 20px;
+  padding: 8px;
+  width: 20%;
+  text-align: center;
+}
+.banner-logo{
+  flex: 30%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner-logo i{
+  color: white;
+  font-size:150px;
+}
+.author{
+  position: relative;
+  top: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.author h1{
+  color: #dc3558;
+}
+.author-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: : 60%;
+  height: 300px;
+}
+.author-photo{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+  align-items:center;
+  flex: 40%;
+  height: 300px;
+}
+.author-photo img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.whyus{
+
+  position: relative;
+  top: 60px;
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: center;
+  font-size: 20px;
+  color: #832561;
+}
+.topic{
+  position: relative;
+  top: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.beginner,.core,.advance{
+  display: flex;
+  flex-direction: column;
+  flex: 30%;
+}
+.topic h1{
+  color: #dc3558;
+}
+.about{
+  position: relative;
+  display: flex;
+  top: 150px;
+  margin-left: 5%;
+  margin-right: 5%;
+  justify-content:space-between;
+  border-top: 3px solid #dc3558;
+}
+.about-us,.email,.social{
+  display: flex;
+  flex-direction: column;
+  flex: 30%;
+}
+.email{
+  align-items: center;
+}
+.links{
+  display: flex;
+  font-size: 35px;
+  justify-content: space-between;
+}
+.links i{
+  color: black;
+}
+/*resposive*/
+@media screen and (max-width: 700px) {
+  .about{
+    flex-direction: column;
+  }
+  .info{
+    flex-direction: column;
+  }
+  .banner{
+    flex-direction: column;
+    height: auto;
+  }
+.topic{
+  flex-direction: column;
+}
+.author{
+  flex-direction: column;
+}
+.author-info{
+  flex: 80%;
+}
+.menu{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+}
